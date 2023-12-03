@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --body-color: #63adf2;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    height: auto; 
+    max-width: 100%;
+    }
+
+body {
+    background-color: #63adf2;
+    background: var( --body-color);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+header {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+/* Mobile Navigation */
+
+.mobile-nav{
+    display: inline-block;
+}
+
+.mobile-nav ul {
+    margin: 1rem;
+    font-size: 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+
+/* Top Desktop Navigation */
+
+.top-nav{
+    display: none;
+}
+
+.logo img{
+    max-width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+}
+
+.logo img:hover{
+    transform: scale(1.2);
+}
+
+
+
+h1 {
+    text-align: center;
+    background-color: #4AAD52;
+    padding: 1rem;
+}
+
+nav ul > li {
+    list-style-type: none;
+    display: inline-block;
+    font-size:  0.63rem;
+    font-weight: bold;
+}
+
+section {
+    border: 0.2rem solid #131B23;
+    padding: 1.25rem;
+}
+
+.mathborder {
+    color: #fff9ec;
+    background-color: #131b23;
+    border: solid #131B23;
+}
+
+.economicsborder {
+    background-color: #fff9ec;
+    border: solid #131b23;
+}
+
+.englishborder {
+    color: #fff9ec;
+    background-color: #131b23;
+    border: solid #131b23;
+}
+
+.testpreparationborder {
+    background-color: #fff9ec;
+    border: solid;
+}
+
+footer {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #131B23;
+    color: #fff9ec;
+    padding: 1rem;
+}
+
+.footer-links{
+    padding: 1.25rem;
+}
+
+.footer-links nav ul li{
+    display: inline-block;
+    padding: 0.6rem;
+}
+
+.rights{
+    text-align: center;
+    padding: 1rem;
+}
+
+.rights p{
+    font-size: 0.8rem;
+}
+
+.image-source p{
+    font-size: 0.7rem; 
+    padding: 1rem 0;
+    color: #B80C09;
+}
+
+.imageTwo{
+    width: 54%;
+    margin: 1rem;
+}
+
+/* CSS for Tables */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.25rem;
+}
+
+th {
+    background-color: #131B23;
+    color: #fff9ec;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+tr:nth-child(even) {
+    background-color: #fff9ec;
+}
+
+tr:hover {
+    background-color: #fff9ec;
+}
+
+td {
+    padding: 0.5rem;
+    border: 0.25rem solid #b80c09;
+}
+
+/* CSS for Tables ends here */
+
+h1 {
+    font-size: 1.5rem;
+  }
+
+  .float-right {
+    float: none; 
+    margin: 1rem 0;
+    width: 44%;
+}
+
+.float-left {
+    float: none; 
+    width: auto;
+}
+
+/* This is a media query for screens with sizes of 768px and greater (e.g. desktop devices) */
+
+@media screen and (min-width: 768px) {
+    
+    main{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+
+    .top-nav{
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        
+    }
+
+    header{
+        flex-direction: row;
+        max-width: 80%;
+        margin: 0 auto;
+        gap: 0.4rem;
+    }
+   
+  
+    .logo img{
+        max-width: 25%;
+        min-width: 15%;
+        display: block;
+        margin: 0;
+    }
+
+    nav ul {
+      margin: 0.2rem;
+      font-size: 1rem;
+      display: flex;
+      gap: 0.9rem;
+      justify-content: center;
+      
+    }
+
+    nav ul > li {
+        font-size: 0.8rem;
+    }
+  
+    section {
+        padding: 1rem; 
+        border: 0.125rem solid #131B23; 
+    }
+
+    .float-left {
+        float: left;
+        max-width: 47%; 
+    }
+
+    .float-right {
+        float: right;
+        width: 25%; 
+    }
+
+    .imageTwo{
+        width: 24%;
+        margin: 1rem;
+    }
+
+    .floats::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    footer {
+        max-width: 80%;
+        margin: 0 auto;
+       
+    }
+
+  }
