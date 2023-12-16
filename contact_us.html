@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Triumvirate Tutors">
     <title>Triumvirate Tutors | Contact Us</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/site.css" type="text/css">
@@ -20,6 +21,10 @@
                 <li><a href="tutoring_subjects.html">Tutoring Subjects</a></li>
                 <li><a href="prices.html">Prices</a></li>
                 <li><a href="hours_of_operation.html">Hours of Operation</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="related.html">Related</a></li>
             </ul>
         </nav>
 
@@ -38,10 +43,108 @@
 
     </header>
 
-<main>
-    <h1>Contact Us</h1>
-    
-</main>
+    <main>
+        <h1>Contact Us</h1>
+
+        <section>
+            <form class="page-container-form">
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="name">First Name:</label>
+                        <input type="text" id="name" placeholder="Enter your first name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Last Name:</label>
+                        <input type="text" id="name" placeholder="Enter your last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Email:</label>
+                        <input type="text" id="name" placeholder="Enter your email">
+                    </div>
+                    <br>
+                    <fieldset>
+                        <label>Type of courses:</label>
+
+                    <div>
+                        <input type="checkbox" id="maths" name="maths" value="maths">
+                        <label class="checkbox_label" for="maths">Basic Math</label>
+                    </div>
+                        <input type="checkbox" id="Calculus" name="Calculus" value="Calculus">
+                        <label class="checkbox_label" for="Calculus">Calculus</label>
+                    <div>
+                        <input type="checkbox" id="Algebra" name="Algebra" value="Algebra">
+                        <label class="checkbox_label" for="Algebra">Algebra</label>
+                    </div>
+                        <input type="checkbox" id="Statistics" name="Statistics" value="Statistics">
+                        <label class="checkbox_label" for="Statistics">Statistics</label>
+                    <div>
+                        <input type="checkbox" id="Microeconomics" name="Microeconomics" value="Microeconomics">
+                        <label class="checkbox_label" for="Microeconomics">Microeconomics</label>
+                    </div>
+                        <input type="checkbox" id="Macroeconomics" name="Macroeconomics" value="Macroeconomics">
+                        <label class="checkbox_label" for="Macroeconomics">Macroeconomics</label>
+                    <div>
+                        <input type="checkbox" id="First Language English" name="First Language English" value="First Language English">
+                        <label class="checkbox_label" for="First Language English">First Language English</label>
+                    </div>
+                        <input type="checkbox" id="Second Language English" name="Second Language English" value="Second Language English">
+                        <label class="checkbox_label" for="Second Language English">Second Language English</label>
+                    <div>
+                        <input type="checkbox" id="Advanced Essay Writing" name="Advanced Essay Writing" value="Advanced Essay Writing">
+                        <label class="checkbox_label" for="Advanced Essay Writing">Advanced Essay Writing</label>
+                    </div>
+                    </fieldset>
+                    <br>
+                    <br>
+
+                    <div class="form-group">
+                        <label for="additionalQuestion">Enter any additional question that you have:</label>
+                        <textarea id="additionalQuestion" rows="4" placeholder="Type your question here"></textarea>
+                    </div>
+                    <br>
+                    <fieldset>
+                    <div class="form-group">
+                        <label>How do you want to take these classes:</label>
+                        <div>
+                            <input type="radio" id="remote" name="remote" value="remote">
+                            <label for="remote">Remote</label>
+
+                            <input type="radio" id="inPerson" name="inPerson" value="inPerson">
+                            <label for="inPerson">In-Person</label>
+                        </div>
+                    </div>
+                    </fieldset>
+                    <br>
+                    <div class="form-group">
+                        <label for="findOut">How did you find out about us?</label>
+                        <select id="findOut">
+                            <optgroup label="Internet">
+                                <option value="searchEngine">Search Engine</option>
+                                <option value="website">Website Link</option>
+                                <option value="discussionForum">Discussion Forum</option>
+                                <option value="socialMedia">Social Media</option>
+                                <option value="other">Other (e.g. Discord)</option>
+                            </optgroup>
+                            <optgroup label="Non-Internet">
+                                <option value="referred">Friend Referral</option>
+                                <option value="ads">Advertisement</option>
+                                <option value="flyer">Flyer</option>
+                                <option value="school">School</option>
+                                <option value="other">Other</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-btns">
+                        <button class="btn-submit" type="submit">Submit</button>
+                        <button class="btn-cancel" type="Cancel">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
 
     <footer>
         <div class="rights">
@@ -49,7 +152,6 @@
         </div>
 
         <div class="footer-links">
-            
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -63,7 +165,9 @@
                 </ul>
             </nav>
         </div>
-        
+        <div>
+            <h2>triumviratetutors.com</h2>
+        </div>
     </footer>
 </body>
 
